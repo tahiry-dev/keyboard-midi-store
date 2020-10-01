@@ -3,3 +3,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+/* ---Global Rules--- */
+/* ---Header--- */
+header {
+  background-color: #383838; }
+
+.nav-item .nav-link {
+  color: #888888; }
+
+.nav-item .nav-link:hover {
+  color: #bbbbbb; }
+
+.fa-bars {
+  color: #888888; }
+
+.right-icon .fa-music {
+  color: #888888; }

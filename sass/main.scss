@@ -6,3 +6,36 @@
   box-sizing: border-box;
 }
 
+/* ---Global Rules--- */
+
+$primary-color: #D35266;
+$secondary-color: #888888;
+$tertiary-color: #383838;
+
+/* ---Header--- */
+
+header {
+  background-color: $tertiary-color;
+}
+
+.nav-item {
+  .nav-link {
+    color: $secondary-color;
+  }
+}
+
+.nav-item {
+  .nav-link:hover {
+    color: lighten($secondary-color, 20%);
+  }
+}
+
+.fa-bars {
+  color: $secondary-color;
+}
+
+.right-icon {
+  .fa-music {
+    color: $secondary-color;
+  }
+}
