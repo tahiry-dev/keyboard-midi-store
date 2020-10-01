@@ -5,6 +5,9 @@
   box-sizing: border-box; }
 
 /* ---Global Rules--- */
+body {
+  min-width: 360px; }
+
 /* ---Header--- */
 header {
   background-color: #383838; }
@@ -20,3 +23,53 @@ header {
 
 .right-icon .fa-music {
   color: #888888; }
+
+/* ---Main Section--- */
+.main-search {
+  width: 102.56%; }
+
+.search-button {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  color: #888888;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #383838;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15sease-in-out,box-shadow .15s ease-in-out; }
+
+.search-button:hover {
+  color: #626262;
+  background-color: #121212; }
+
+/* -------------------------------MEDIA QUERIES-----------------------------------*/
+@media screen and (min-width: 768px) {
+  .search-button {
+    display: inline-block;
+    width: 80px;
+    font-weight: 400;
+    color: #888888;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #383838;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15sease-in-out,box-shadow .15s ease-in-out; }
+  .main-search {
+    width: 93%; } }

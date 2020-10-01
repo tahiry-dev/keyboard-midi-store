@@ -8,9 +8,54 @@
 
 /* ---Global Rules--- */
 
+body {
+  min-width: 360px;
+}
+
 $primary-color: #D35266;
 $secondary-color: #888888;
 $tertiary-color: #383838;
+
+@mixin button {
+  display: inline-block;
+  width: 80px;
+  font-weight: 400;
+  color:$secondary-color;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: $tertiary-color;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15sease-in-out,box-shadow .15s ease-in-out;
+}
+
+@mixin button-block {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  color:$secondary-color;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: $tertiary-color;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15sease-in-out,box-shadow .15s ease-in-out;
+}
+
 
 /* ---Header--- */
 
@@ -37,5 +82,32 @@ header {
 .right-icon {
   .fa-music {
     color: $secondary-color;
+  }
+}
+
+/* ---Main Section--- */
+
+.main-search {
+  width: 102.56%;
+}
+
+.search-button {
+  @include button-block;
+}
+
+.search-button:hover {
+  color: darken($secondary-color, 15%);
+  background-color: darken($tertiary-color, 15%);
+}
+
+/* -------------------------------MEDIA QUERIES-----------------------------------*/
+
+@media screen and (min-width: 768px){
+  .search-button{
+    @include button;
+  }
+
+  .main-search {
+    width: 93%;
   }
 }
