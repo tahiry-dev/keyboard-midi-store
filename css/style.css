@@ -51,6 +51,10 @@ header {
   color: #626262;
   background-color: #121212; }
 
+/* ---Main-Feature-section--- */
+.slide-position {
+  margin: 0 auto; }
+
 /* -------------------------------MEDIA QUERIES-----------------------------------*/
 @media screen and (min-width: 768px) {
   .search-button {

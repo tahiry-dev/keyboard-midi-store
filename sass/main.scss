@@ -100,6 +100,12 @@ header {
   background-color: darken($tertiary-color, 15%);
 }
 
+/* ---Main-Feature-section--- */
+.slide-position {
+  margin: 0 auto;
+}
+
+
 /* -------------------------------MEDIA QUERIES-----------------------------------*/
 
 @media screen and (min-width: 768px){
