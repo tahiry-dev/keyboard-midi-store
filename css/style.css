@@ -6,7 +6,7 @@
 
 /* ---Global Rules--- */
 body {
-  min-width: 360px; }
+  min-width: 596px; }
 
 /* ---Header--- */
 header {
@@ -54,8 +54,8 @@ header {
 /* ---Main-Hot-ad-section--- */
 .carousel-container {
   width: 65%;
-  margin: 0 auto;
-  height: 250px; }
+  height: 250px;
+  margin: 0 auto; }
 
 .hot-ad-details {
   display: inline-block;
@@ -76,6 +76,19 @@ header {
 .ad-description .text {
   color: #888888; }
 
+/* ---Main Product section--- */
+.products-row {
+  width: 100%;
+  margin: 0 auto; }
+
+.card {
+  height: 400px;
+  line-height: 0.7; }
+  .card .card-img-top {
+    height: 200px; }
+  .card .title {
+    height: 60px; }
+
 /* -------------------------------MEDIA QUERIES-----------------------------------*/
 @media screen and (min-width: 768px) {
   .search-button {
@@ -94,8 +107,18 @@ header {
     height: 300px; }
   .hot-image-2 {
     width: 200px;
-    height: 200px; } }
+    height: 200px; }
+  .main-products {
+    margin-left: 150px; }
+  .wrapper {
+    max-width: 70%; } }
 
 @media screen and (max-width: 991px) {
   .hot-image-3 {
     height: 100px; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .wrapper {
+    width: 110%; }
+  .status {
+    margin-top: 15px; } }

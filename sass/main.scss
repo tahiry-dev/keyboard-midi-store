@@ -9,7 +9,7 @@
 /* ---Global Rules--- */
 
 body {
-  min-width: 360px;
+  min-width: 596px;
 }
 
 $primary-color: #D35266;
@@ -48,6 +48,10 @@ $tertiary-color: #383838;
   text-align: center;
   background-color: $primary-color;
   @include common-border;
+}
+
+@mixin to_center {
+  margin: 0 auto;
 }
 
 /* ---Header--- */
@@ -97,8 +101,8 @@ header {
 
 .carousel-container {
   width: 65%;
-  margin: 0 auto;
   height: 250px;
+  @include to_center;
 }
 
 .hot-ad-details {
@@ -113,6 +117,26 @@ header {
   .text{
     color: $secondary-color;
   }
+}
+
+/* ---Main Product section--- */
+
+.products-row {
+  width: 100%;
+  @include to_center;
+}
+.card {
+  height: 400px;
+  line-height: 0.7;
+
+  .card-img-top {
+    height: 200px;
+  }
+
+  .title {
+    height: 60px;
+  }
+  
 }
 
 /* -------------------------------MEDIA QUERIES-----------------------------------*/
@@ -148,6 +172,16 @@ header {
     width: 200px;
     height: 200px;
   }
+
+  .main-products {
+   margin-left: 150px;
+  }
+
+  .wrapper {
+    max-width: 70%;
+  }
+
+
 }
 
 @media screen and (max-width: 991px) {
@@ -155,4 +189,16 @@ header {
     height: 100px;
   }
   
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .wrapper {
+    width: 110%;
+  }
+
+  .status {
+    margin-top: 15px;
+  }
 }
