@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   max-width: 100%;
+  font-family: myHelvetica;
 }
 
 /* ---Global Rules--- */
@@ -13,10 +14,41 @@ body {
   min-width: 596px;
 }
 
+@font-face {
+  font-family: myHelvetica;
+  src: url(fonts/HelveticaNeue-Light.ttf);
+}
+
+@font-face {
+  font-family: myHelvetica;
+  src: url(fonts/HelveticaNeu-Bold.ttf);
+  font-weight: bold;
+}
+
 $primary-color: #D35266;
 $secondary-color: #888888;
 $tertiary-color: #383838;
 $margin-left: 70px;
+
+.light {
+  color:$secondary-color;
+}
+
+.danger {
+  color:$primary-color;
+}
+
+.muted {
+  color: $tertiary-color;
+}
+
+.back-danger {
+  background-color: $primary-color;
+}
+
+.back-muted {
+  background-color: $tertiary-color;
+}
 
 @mixin common-border {
   border: 1px solid transparent;
@@ -46,7 +78,7 @@ $margin-left: 70px;
 @mixin hot-ad-description {
   display: inline-block;
   font-weight: 400;
-  color: #fff;
+  color: $tertiary-color;
   text-align: center;
   background-color: $primary-color;
   @include common-border;
@@ -115,6 +147,11 @@ header {
 
 .hot-ad-details {
   @include hot-ad-description;
+}
+
+.hot-ad-details:hover {
+  color: darken($tertiary-color, 20%);
+  text-decoration: none;
 }
 
 .details-container {
@@ -191,6 +228,17 @@ footer {
 .footer-separator {
   width: 90%;
   margin: 0 auto;
+}
+
+.language-link,
+.social-link {
+  color: $secondary-color;
+}
+
+.language-link:hover,
+.social-link:hover {
+  color: lighten($secondary-color, 20%);
+  text-decoration: none;
 }
 
 /* -------------------------------MEDIA QUERIES-----------------------------------*/
