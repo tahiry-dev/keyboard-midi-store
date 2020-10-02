@@ -16,18 +16,7 @@ $primary-color: #D35266;
 $secondary-color: #888888;
 $tertiary-color: #383838;
 
-@mixin button {
-  display: inline-block;
-  width: 80px;
-  font-weight: 400;
-  color:$secondary-color;
-  text-align: center;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: $tertiary-color;
+@mixin common-border {
   border: 1px solid transparent;
   padding: .375rem .75rem;
   font-size: 1rem;
@@ -36,7 +25,7 @@ $tertiary-color: #383838;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15sease-in-out,box-shadow .15s ease-in-out;
 }
 
-@mixin button-block {
+@mixin button {
   display: block;
   width: 100%;
   font-weight: 400;
@@ -48,14 +37,18 @@ $tertiary-color: #383838;
   -ms-user-select: none;
   user-select: none;
   background-color: $tertiary-color;
-  border: 1px solid transparent;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: .25rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15sease-in-out,box-shadow .15s ease-in-out;
+  @include common-border;
+ 
 }
 
+@mixin hot-ad-description {
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  background-color: $primary-color;
+  @include common-border;
+}
 
 /* ---Header--- */
 
@@ -92,7 +85,7 @@ header {
 }
 
 .search-button {
-  @include button-block;
+  @include button;
 }
 
 .search-button:hover {
@@ -100,20 +93,66 @@ header {
   background-color: darken($tertiary-color, 15%);
 }
 
-/* ---Main-Feature-section--- */
-.slide-position {
+/* ---Main-Hot-ad-section--- */
+
+.carousel-container {
+  width: 65%;
   margin: 0 auto;
+  height: 250px;
 }
 
+.hot-ad-details {
+  @include hot-ad-description;
+}
+
+.details-container {
+  width: 100%;
+}
+
+.ad-description {
+  .text{
+    color: $secondary-color;
+  }
+}
 
 /* -------------------------------MEDIA QUERIES-----------------------------------*/
 
 @media screen and (min-width: 768px){
   .search-button{
-    @include button;
+    display: inline-block;
+    width: 80px;
   }
 
   .main-search {
     width: 93%;
   }
+  
+}
+
+@media screen and (max-width: 767px) {
+  
+  .carousel-container {
+    margin-bottom: 200px;  
+  }
+
+  .hot-ad-details {
+    width: 100%; 
+  }
+
+  .hot-image-1 {
+    width: 350px;
+    height: 300px;
+  }
+
+  .hot-image-2 {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hot-image-3 {
+    height: 100px;
+  }
+  
 }
