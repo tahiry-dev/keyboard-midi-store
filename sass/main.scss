@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 /* ---Global Rules--- */
@@ -15,6 +16,7 @@ body {
 $primary-color: #D35266;
 $secondary-color: #888888;
 $tertiary-color: #383838;
+$margin-left: 70px;
 
 @mixin common-border {
   border: 1px solid transparent;
@@ -63,6 +65,7 @@ $tertiary-color: #383838;
 
 header {
   background-color: $tertiary-color;
+  width: 100%;
 }
 
 .nav-item {
@@ -148,7 +151,7 @@ header {
 
 .main-video-demos {
   width: 95%;
-  margin-left: 6%;
+  margin-left: 5%;
   @include flex-wrap;
   .iframe {
     width: 100%;
@@ -167,13 +170,33 @@ footer {
   width: 50px;
 }
 
-.footer-menu {
+.about {
+  width: 80%;
+  margin-left: $margin-left;
 }
 
+.acknowledgement {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.copyright {
+  margin-left: $margin-left;
+}
+
+.social-shares {
+  margin-right: 70px;
+}
+
+.footer-separator {
+  width: 90%;
+  margin: 0 auto;
+}
 
 /* -------------------------------MEDIA QUERIES-----------------------------------*/
 
 @media screen and (min-width: 768px){
+
   .search-button{
     display: inline-block;
     width: 80px;
@@ -188,6 +211,7 @@ footer {
   .Korg-SV2 {
     width: 30%;
     margin-right: 2%;
+    height: 250px;
   }
   
 }
@@ -227,7 +251,29 @@ footer {
     margin: 0 auto 12%;
   }
 
+  footer {
+    margin-top: 20px;
+  }
 
+  .about {
+    margin-left: 80px;
+  }
+
+  .acknowledgement {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-nav,
+  .language-version {
+    text-align: center;
+  }
+
+  .social-shares {
+    width: 100%;
+    text-align: center;
+    margin-left: 50px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -246,9 +292,3 @@ footer {
     margin-top: 15px;
   }
 }
-
-//@media screen and (min-width: 768px) and (max-width: 1023px) {
-  
- 
-
-
