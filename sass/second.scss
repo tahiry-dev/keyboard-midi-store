@@ -5,18 +5,19 @@
   padding: 0;
   box-sizing: border-box;
   max-width: 100%;
-  font-family: helvet, Arial, Helvetica, sans-serif;
+  font-family: helvet, helvetica, arial, sans-serif;
 }
 
 /* ---Global Rules--- */
 
 body {
   min-width: 596px;
+  object-fit: cover;
 }
 
 @font-face {
   font-family: helvet;
-  src: url(../fonts/HelveticaNeue.ttf);
+  src: url(../fonts/HelveticaNeue-Light.ttf);
 }
 
 @font-face {
