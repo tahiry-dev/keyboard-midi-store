@@ -124,6 +124,12 @@
   }
   
   /* ---Main Section--- */
+
+  
+  main {
+    background-color: lighten($secondary-color, 45%);
+  }
+  
    
   .search-button {
     @include button;
@@ -134,6 +140,30 @@
   .search-button:hover {
     color: darken($secondary-color, 15%);
     background-color: darken($tertiary-color, 15%);
+  }
+
+  .product-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 5%;
+  }
+
+  .price {
+    display: inline-block;
+    background-color: $primary-color;
+    @include common-border;
+    width: 80px;
+    font-size: 1.3rem;
+  }
+
+  .page:hover {
+    background-color: lighten($tertiary-color, 60%);
+    color: $tertiary-color;
+  }
+
+  .page-number {
+    width: 100%;
+    margin-left: 40%;
   }
   
   /* ---Footer--- */
