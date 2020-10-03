@@ -124,6 +124,10 @@ header {
 
 /* ---Main Section--- */
 
+main {
+background-color: lighten($secondary-color, 45%);
+}
+
 .main-search {
   width: 102.56%;
 }
@@ -200,11 +204,18 @@ header {
 /* ---Footer--- */
 
 footer {
+  background-color: $tertiary-color;
   margin-top: 100px;
+  padding: 20px;
 }
 
 .lang-image {
   width: 50px;
+  margin-left: 9px;
+}
+
+.french {
+  margin-left: 15px;
 }
 
 .about {
