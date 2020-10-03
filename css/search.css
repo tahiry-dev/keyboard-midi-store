@@ -1,0 +1,129 @@
+/* ---CSS RESET--- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-family: myHelvetica; }
+
+/* ---Global Rules--- */
+body {
+  min-width: 596px; }
+
+@font-face {
+  font-family: myHelvetica;
+  src: url(fonts/HelveticaNeue-Light.ttf); }
+
+@font-face {
+  font-family: myHelvetica;
+  src: url(fonts/HelveticaNeu-Bold.ttf);
+  font-weight: bold; }
+
+.light {
+  color: #888888; }
+
+.danger {
+  color: #D35266; }
+
+.muted {
+  color: #383838; }
+
+.back-danger {
+  background-color: #D35266; }
+
+.back-muted {
+  background-color: #383838; }
+
+/* ---Header--- */
+header {
+  background-color: #383838;
+  width: 100%; }
+
+.nav-item .nav-link {
+  color: #888888; }
+
+.nav-item .nav-link:hover {
+  color: #bbbbbb; }
+
+.fa-bars {
+  color: #888888; }
+
+.right-icon .fa-music {
+  color: #888888; }
+
+/* ---Main Section--- */
+.search-button {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  color: #888888;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #383838;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15sease-in-out,box-shadow .15s ease-in-out;
+  width: 150px;
+  margin-top: 35px; }
+
+.search-button:hover {
+  color: #626262;
+  background-color: #121212; }
+
+/* ---Footer--- */
+footer {
+  margin-top: 100px; }
+
+.lang-image {
+  width: 50px; }
+
+.about {
+  width: 80%;
+  margin-left: 70px; }
+
+.acknowledgement {
+  display: flex;
+  justify-content: space-between; }
+
+.copyright {
+  margin-left: 70px; }
+
+.social-shares {
+  margin-right: 70px; }
+
+.footer-separator {
+  width: 90%;
+  margin: 0 auto; }
+
+.language-link,
+.social-link {
+  color: #888888; }
+
+.language-link:hover,
+.social-link:hover {
+  color: #bbbbbb;
+  text-decoration: none; }
+
+/* -------------------------------MEDIA QUERIES-----------------------------------*/
+@media screen and (max-width: 767px) {
+  footer {
+    margin-top: 20px; }
+  .about {
+    margin-left: 80px; }
+  .acknowledgement {
+    display: flex;
+    flex-wrap: wrap; }
+  .footer-nav,
+  .language-version {
+    text-align: center; }
+  .social-shares {
+    width: 100%;
+    text-align: center;
+    margin-left: 50px; } }
