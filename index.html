@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Short icon-->
-    <link rel="shortcut icon" href="images/Keyboard-Midi .png">
+    <link rel="shortcut icon" href="images/Keyb.png">
     <!--font awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
         integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
@@ -21,8 +21,7 @@
     <header>
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hidden-link"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hidden-link">
                     <span class="navbar-toggler-icon mt-2"><i class="fas fa-bars fa-lg"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="hidden-link">
@@ -66,18 +65,19 @@
             <div class="container text-center">
                 <form action="/search.html">
                     <div class="form-row main-search pt-4">
-                        <div class="col-md-3 offset-md-1 mb-2">
+                        <div class="col-md-3 mb-2">
                             <select class="custom-select" id="validationDefault04" required>
+                                <option selected disabled value="">Choose Your Category</option>
                                 <option>Digital Piano</option>
                                 <option>Electronic Keyboard</option>
                                 <option>Midi Controller</option>
                                 <option>Accessories</option>
                             </select>
                         </div>
-                        <div class="col-md-7 mb-2">
+                        <div class="col-md-4 col-lg-6 mb-2">
                             <input type="text" class="form-control" id="validationDefault03" placeholder="Brand name">
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-md-2">
                             <button class="search-button" type="submit">Search</button>
                         </div>
                     </div>
@@ -158,7 +158,10 @@
         </div>
         <div class="main-products mt-5">
             <div class="container">
-                <p class="danger h2 mb-4 ml-3">Digital Piano<i class="fas fa-angle-right ml-2"></i></p>
+                <div class="product-heading d-flex">
+                    <p class="danger h2 ml-3">Digital Piano</p>
+                    <p><i class="danger fas fa-angle-right fa-2x ml-2"></i></p>
+                </div>
                 <div class="row products-row">
                     <div class="col-md-4 py-3">
                         <div class="card wrapper">
@@ -170,7 +173,7 @@
                                 <div class="status">
                                     <p class="danger font-weight-bolder">New</p>
                                 </div>
-                                <p class="light">From: San Jose, US</p>
+                                <p class="light">From: San Jose California, US</p>
                                 <div class="card-info d-flex justify-content-between">
                                     <button type="button" class="btn btn-secondary" data-container="body"
                                         data-toggle="popover" data-placement="top" data-title="Add to collection"
@@ -216,7 +219,7 @@
                                 <div class="status">
                                     <p class="danger font-weight-bolder">New</p>
                                 </div>
-                                <p class="light">From: California, US</p>
+                                <p class="light">From: San Jose California, US</p>
                                 <div class="card-info d-flex justify-content-between">
                                     <button type="button" class="btn btn-secondary" data-container="body"
                                         data-toggle="popover" data-placement="top" data-title="Add to collection"
@@ -228,6 +231,160 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="product-heading d-flex">
+                    <p class="danger h2 ml-3 pt-5">Electronic Keyboard</p>
+                    <p><i class="danger fas fa-angle-right fa-2x ml-2 pt-5"></i></p>
+                </div>
+                <div class="row products-row">
+                    <div class="col-md-4 py-3">
+                        <div class="card wrapper">
+                            <img src="images/nord-stage-3.jpg" class="card-img-top" alt="nord-stage image">
+                            <div class="card-body">
+                                <div class="title">
+                                    <h5 class="card-title light">Nord Stage 3 88-Key Digital Piano
+                                    </h5>
+                                </div>
+                                <div class="status">
+                                    <p class="danger font-weight-bolder">New</p>
+                                </div>
+                                <p class="light">From: San Jose California, US</p>
+                                <div class="card-info d-flex justify-content-between">
+                                    <button type="button" class="btn btn-secondary" data-container="body"
+                                        data-toggle="popover" data-placement="top" data-title="Add to collection"
+                                        data-content="More Details">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                    <p class="danger font-weight-bolder pt-3">$4,499</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 py-3">
+                        <div class="card wrapper">
+                            <img src="images/roland-JUNO.jpg" class="card-img-top" alt="roland-JUNO image">
+                            <div class="card-body">
+                                <div class="title">
+                                    <h5 class="card-title light">Roland JUNO-DS 88-Key</h5>
+                                </div>
+                                <div class="status">
+                                    <p class="danger font-weight-bolder">New</p>
+                                </div>
+                                <p class="light">From: Korea</p>
+                                <div class="card-info d-flex justify-content-between">
+                                    <button type="button" class="btn btn-secondary" data-container="body"
+                                        data-toggle="popover" data-placement="top" data-title="Add to collection"
+                                        data-content="More Details">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                    <p class="danger font-weight-bolder pt-3">$875.84</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 py-3">
+                        <div class="card wrapper">
+                            <img src="images/yamaha-motif.jpg" class="card-img-top" alt="yamaha-motif images">
+                            <div class="card-body">
+                                <div class="title">
+                                    <h5 class="card-title light">Yamaha MOTIFXS6 Music Production Synthesizer</h5>
+                                </div>
+                                <div class="status">
+                                    <p class="danger font-weight-bolder">Used</p>
+                                </div>
+                                <p class="light">From: California, US</p>
+                                <div class="card-info d-flex justify-content-between">
+                                    <button type="button" class="btn btn-secondary" data-container="body"
+                                        data-toggle="popover" data-placement="top" data-title="Add to collection"
+                                        data-content="More Details">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                    <p class="danger font-weight-bolder pt-3">$559</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-heading d-flex">
+                    <p class="danger h2 ml-3 pt-5">Accessories</p>
+                    <p><i class="danger fas fa-angle-right fa-2x ml-2 pt-5"></i></p>
+                </div>
+                <div class="row products-row">
+                    <div class="col-md-4 py-3">
+                        <div class="card wrapper">
+                            <img src="images/sustain-pedal.jpg" class="card-img-top" alt="sustain-pedal image">
+                            <div class="card-body">
+                                <div class="title">
+                                    <h5 class="card-title light">Donner DK-1 Sustain Pedal for Keyboard
+                                    </h5>
+                                </div>
+                                <div class="status">
+                                    <p class="danger font-weight-bolder">New</p>
+                                </div>
+                                <p class="light">From: San Jose California, US</p>
+                                <div class="card-info d-flex justify-content-between">
+                                    <button type="button" class="btn btn-secondary" data-container="body"
+                                        data-toggle="popover" data-placement="top" data-title="Add to collection"
+                                        data-content="More Details">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                    <p class="danger font-weight-bolder pt-3">$38.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 py-3">
+                        <div class="card wrapper">
+                            <img src="images/keyboard-stand.jpg" class="card-img-top" alt="keyboard-stand image">
+                            <div class="card-body">
+                                <div class="title">
+                                    <h5 class="card-title light">Neewer Heavy Duty Z-Style Keyboard Piano Stand</h5>
+                                </div>
+                                <div class="status">
+                                    <p class="danger font-weight-bolder">Used</p>
+                                </div>
+                                <p class="light">From: Antsirabe, Madagascar</p>
+                                <div class="card-info d-flex justify-content-between">
+                                    <button type="button" class="btn btn-secondary" data-container="body"
+                                        data-toggle="popover" data-placement="top" data-title="Add to collection"
+                                        data-content="More Details">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                    <p class="danger font-weight-bolder pt-3">$61.63</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 py-3">
+                        <div class="card wrapper">
+                            <img src="images/shoulder-bag.jpg" class="card-img-top" alt="shoulder-bag images">
+                            <div class="card-body">
+                                <div class="title">
+                                    <h5 class="card-title light">Novation 49 Soft Shoulder Bag </h5>
+                                </div>
+                                <div class="status">
+                                    <p class="danger font-weight-bolder">New</p>
+                                </div>
+                                <p class="light">From: San Francisco california, US</p>
+                                <div class="card-info d-flex justify-content-between">
+                                    <button type="button" class="btn btn-secondary" data-container="body"
+                                        data-toggle="popover" data-placement="top" data-title="Add to collection"
+                                        data-content="More Details">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                    <p class="danger font-weight-bolder pt-3">$89.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-heading d-flex">
+                    <p class="danger h2 ml-3">More</p>
+                    <p><i class="danger fas fa-angle-right fa-2x ml-2"></i></p>
                 </div>
             </div>
         </div>
@@ -242,19 +399,19 @@
         <div class="main-video-demos">
             <div class="korg-micro-piano">
                 <h5 class="danger">Korg MicroPiano</h5>
-                <iframe class="iframe" src="https://www.youtube.com/embed/HxZ_9Vnvat4" frameborder="0"
+                <iframe class="iframe" src="https://www.youtube.com/embed/HxZ_9Vnvat4"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
             <div class="nord-stage">
                 <h5 class="danger">Nord Stage</h5>
-                <iframe class="iframe" src="https://www.youtube.com/embed/5Zsz6TkMB3A" frameborder="0"
+                <iframe class="iframe" src="https://www.youtube.com/embed/5Zsz6TkMB3A"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
             <div class="Korg-SV2">
                 <h5 class="danger">Korg SV2</h5>
-                <iframe class="iframe" src="https://www.youtube.com/embed/R2xLPQbKOCw" frameborder="0"
+                <iframe class="iframe" src="https://www.youtube.com/embed/R2xLPQbKOCw"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>

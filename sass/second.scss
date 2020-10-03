@@ -1,247 +1,246 @@
 /* ---CSS RESET--- */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    max-width: 100%;
-    font-family: myHelvetica;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-family: myHelvetica;
+}
+
+/* ---Global Rules--- */
+
+body {
+  min-width: 596px;
+}
+
+@font-face {
+  font-family: myHelvetica;
+  src: url(fonts/HelveticaNeue-Light.ttf);
+}
+
+@font-face {
+  font-family: myHelvetica;
+  src: url(fonts/HelveticaNeu-Bold.ttf);
+  font-weight: bold;
+}
+
+$primary-color: #d35266;
+$secondary-color: #888;
+$tertiary-color: #383838;
+$margin-left: 70px;
+
+.light {
+  color: $secondary-color;
+}
+
+.danger {
+  color: $primary-color;
+}
+
+.muted {
+  color: $tertiary-color;
+}
+
+.back-danger {
+  background-color: $primary-color;
+}
+
+.back-muted {
+  background-color: $tertiary-color;
+}
+
+@mixin common-border {
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15 ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@mixin button {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  color: $secondary-color;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: $tertiary-color;
+
+  @include common-border;
+}
+
+@mixin hot-ad-description {
+  display: inline-block;
+  font-weight: 400;
+  color: $tertiary-color;
+  text-align: center;
+  background-color: $primary-color;
+
+  @include common-border;
+}
+
+@mixin to_center {
+  margin: 0 auto;
+}
+
+@mixin flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ---Header--- */
+
+header {
+  background-color: $tertiary-color;
+  width: 100%;
+}
+
+.nav-item {
+  .nav-link {
+    color: $secondary-color;
   }
-  
-  /* ---Global Rules--- */
-  
-  body {
-    min-width: 596px;
-    
+}
+
+.nav-item {
+  &:hover {
+    color: lighten($secondary-color, 20%);
   }
-  
-  @font-face {
-    font-family: myHelvetica;
-    src: url(fonts/HelveticaNeue-Light.ttf);
+}
+
+.fa-bars {
+  color: $secondary-color;
+}
+
+.right-icon {
+  .fa-music {
+    color: $secondary-color;
   }
-  
-  @font-face {
-    font-family: myHelvetica;
-    src: url(fonts/HelveticaNeu-Bold.ttf);
-    font-weight: bold;
+}
+
+/* ---Main Section--- */
+
+main {
+  background-color: lighten($secondary-color, 45%);
+}
+
+.search-button {
+  @include button;
+
+  width: 150px;
+  margin-top: 35px;
+}
+
+.search-button:hover {
+  color: darken($secondary-color, 15%);
+  background-color: darken($tertiary-color, 15%);
+}
+
+.product-info {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 5%;
+}
+
+.price {
+  display: inline-block;
+  background-color: $primary-color;
+
+  @include common-border;
+
+  width: 100px;
+  font-size: 1.3rem;
+}
+
+.page:hover {
+  background-color: lighten($tertiary-color, 60%);
+  color: $tertiary-color;
+}
+
+.page-number {
+  width: 100%;
+  margin-left: 40%;
+}
+
+/* ---Footer--- */
+
+footer {
+  background-color: $tertiary-color;
+  padding: 20px;
+}
+
+.lang-image {
+  width: 50px;
+  margin-left: 9px;
+}
+
+.french {
+  margin-left: 15px;
+}
+
+.about {
+  width: 80%;
+  margin-left: $margin-left;
+}
+
+.acknowledgement {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  margin-left: $margin-left;
+}
+
+.social-shares {
+  margin-right: 70px;
+}
+
+.footer-separator {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.language-link,
+.social-link {
+  color: $secondary-color;
+}
+
+.language-link:hover,
+.social-link:hover {
+  color: lighten($secondary-color, 20%);
+  text-decoration: none;
+}
+
+/* -------------------------------MEDIA QUERIES----------------------------------- */
+
+@media screen and (max-width: 767px) {
+  footer {
+    margin-top: 20px;
   }
-  
-  $primary-color: #D35266;
-  $secondary-color: #888888;
-  $tertiary-color: #383838;
-  $margin-left: 70px;
-  
-  .light {
-    color:$secondary-color;
+
+  .about {
+    margin-left: 80px;
   }
-  
-  .danger {
-    color:$primary-color;
-  }
-  
-  .muted {
-    color: $tertiary-color;
-  }
-  
-  .back-danger {
-    background-color: $primary-color;
-  }
-  
-  .back-muted {
-    background-color: $tertiary-color;
-  }
-  
-  @mixin common-border {
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15sease-in-out,box-shadow .15s ease-in-out;
-  }
-  
-  @mixin button {
-    display: block;
-    width: 100%;
-    font-weight: 400;
-    color:$secondary-color;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: $tertiary-color;
-    @include common-border;
-   
-  }
-  
-  @mixin hot-ad-description {
-    display: inline-block;
-    font-weight: 400;
-    color: $tertiary-color;
-    text-align: center;
-    background-color: $primary-color;
-    @include common-border;
-  }
-  
-  @mixin to_center {
-    margin: 0 auto;
-  }
-  
-  @mixin flex-wrap {
+
+  .acknowledgement {
     display: flex;
     flex-wrap: wrap;
   }
-  
-  /* ---Header--- */
-  
-  header {
-    background-color: $tertiary-color;
-    width: 100%;
-  }
-  
-  .nav-item {
-    .nav-link {
-      color: $secondary-color;
-    }
-  }
-  
-  .nav-item {
-    .nav-link:hover {
-      color: lighten($secondary-color, 20%);
-    }
-  }
-  
-  .fa-bars {
-    color: $secondary-color;
-  }
-  
-  .right-icon {
-    .fa-music {
-      color: $secondary-color;
-    }
-  }
-  
-  /* ---Main Section--- */
 
-  
-  main {
-    background-color: lighten($secondary-color, 45%);
-  }
-  
-  .search-button {
-    @include button;
-    width: 150px;
-    margin-top: 35px;
-  }
-  
-  .search-button:hover {
-    color: darken($secondary-color, 15%);
-    background-color: darken($tertiary-color, 15%);
+  .footer-nav,
+  .language-version {
+    text-align: center;
   }
 
-  .product-info {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 5%;
-  }
-
-  .price {
-    display: inline-block;
-    background-color: $primary-color;
-    @include common-border;
-    width: 100px;
-    font-size: 1.3rem;
-  }
-
-  .page:hover {
-    background-color: lighten($tertiary-color, 60%);
-    color: $tertiary-color;
-  }
-
-  .page-number {
-    width: 100%;
-    margin-left: 40%;
-  }
-  
-  /* ---Footer--- */
-  
-  footer {
-    background-color: $tertiary-color;
-    padding: 20px;
-  }
-  
-  .lang-image {
-    width: 50px;
-    margin-left: 9px;
-  }
-  
-  .french {
-    margin-left: 15px;
-  }
-  
-  .about {
-    width: 80%;
-    margin-left: $margin-left;
-  }
-  
-  .acknowledgement {
-    display: flex;
-    justify-content: space-between; 
-  }
-  
-  .copyright {
-    margin-left: $margin-left;
-  }
-  
   .social-shares {
-    margin-right: 70px;
+    width: 100%;
+    text-align: center;
+    margin-left: 50px;
   }
-  
-  .footer-separator {
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  .language-link,
-  .social-link {
-    color: $secondary-color;
-  }
-  
-  .language-link:hover,
-  .social-link:hover {
-    color: lighten($secondary-color, 20%);
-    text-decoration: none;
-  }
-  
-  /* -------------------------------MEDIA QUERIES-----------------------------------*/
-  
-  
-  @media screen and (max-width: 767px) {
-    
-    footer {
-      margin-top: 20px;
-    }
-  
-    .about {
-      margin-left: 80px;
-    }
-  
-    .acknowledgement {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  
-    .footer-nav,
-    .language-version {
-      text-align: center;
-    }
-  
-    .social-shares {
-      width: 100%;
-      text-align: center;
-      margin-left: 50px;
-    }
-  }
-  
+}

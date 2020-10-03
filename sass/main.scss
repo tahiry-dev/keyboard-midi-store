@@ -1,6 +1,6 @@
 /* ---CSS RESET--- */
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,6 +12,7 @@
 
 body {
   min-width: 596px;
+  object-fit: cover;
 }
 
 @font-face {
@@ -25,17 +26,17 @@ body {
   font-weight: bold;
 }
 
-$primary-color: #D35266;
-$secondary-color: #888888;
+$primary-color: #d35266;
+$secondary-color: #888;
 $tertiary-color: #383838;
 $margin-left: 70px;
 
 .light {
-  color:$secondary-color;
+  color: $secondary-color;
 }
 
 .danger {
-  color:$primary-color;
+  color: $primary-color;
 }
 
 .muted {
@@ -52,18 +53,18 @@ $margin-left: 70px;
 
 @mixin common-border {
   border: 1px solid transparent;
-  padding: .375rem .75rem;
+  padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: .25rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15sease-in-out,box-shadow .15s ease-in-out;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15 ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 @mixin button {
   display: block;
   width: 100%;
   font-weight: 400;
-  color:$secondary-color;
+  color: $secondary-color;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -71,8 +72,8 @@ $margin-left: 70px;
   -ms-user-select: none;
   user-select: none;
   background-color: $tertiary-color;
+
   @include common-border;
- 
 }
 
 @mixin hot-ad-description {
@@ -81,6 +82,7 @@ $margin-left: 70px;
   color: $tertiary-color;
   text-align: center;
   background-color: $primary-color;
+
   @include common-border;
 }
 
@@ -107,7 +109,7 @@ header {
 }
 
 .nav-item {
-  .nav-link:hover {
+  &:hover {
     color: lighten($secondary-color, 20%);
   }
 }
@@ -125,11 +127,7 @@ header {
 /* ---Main Section--- */
 
 main {
-background-color: lighten($secondary-color, 45%);
-}
-
-.main-search {
-  width: 102.56%;
+  background-color: lighten($secondary-color, 45%);
 }
 
 .search-button {
@@ -146,6 +144,7 @@ background-color: lighten($secondary-color, 45%);
 .carousel-container {
   width: 65%;
   height: 250px;
+
   @include to_center;
 }
 
@@ -163,7 +162,7 @@ background-color: lighten($secondary-color, 45%);
 }
 
 .ad-description {
-  .text{
+  .text {
     color: $secondary-color;
   }
 }
@@ -172,8 +171,10 @@ background-color: lighten($secondary-color, 45%);
 
 .products-row {
   width: 100%;
+
   @include to_center;
 }
+
 .card {
   height: 400px;
   line-height: 0.7;
@@ -185,7 +186,17 @@ background-color: lighten($secondary-color, 45%);
   .title {
     height: 60px;
   }
-  
+}
+
+.more-products {
+  a:hover {
+    color: $secondary-color;
+    text-decoration: none;
+  }
+}
+
+.fa-angle-right {
+  margin-top: 7.45px;
 }
 
 /* ---Video Demos--- */
@@ -193,10 +204,13 @@ background-color: lighten($secondary-color, 45%);
 .main-video-demos {
   width: 95%;
   margin-left: 5%;
+
   @include flex-wrap;
+
   .iframe {
     width: 100%;
     height: 100%;
+    border-width: 0;
   }
 }
 
@@ -225,7 +239,7 @@ footer {
 
 .acknowledgement {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .copyright {
@@ -252,17 +266,17 @@ footer {
   text-decoration: none;
 }
 
-/* -------------------------------MEDIA QUERIES-----------------------------------*/
+/* -------------------------------MEDIA QUERIES----------------------------------- */
 
-@media screen and (min-width: 768px){
-
-  .search-button{
+@media screen and (min-width: 768px) {
+  .search-button {
     display: inline-block;
     width: 80px;
+    margin-right: 100px;
   }
 
   .main-search {
-    width: 93%;
+    margin-left: 140px;
   }
 
   .korg-micro-piano,
@@ -272,17 +286,15 @@ footer {
     margin-right: 2%;
     height: 250px;
   }
-  
 }
 
 @media screen and (max-width: 767px) {
-  
   .carousel-container {
-    margin-bottom: 200px;  
+    margin-bottom: 200px;
   }
 
   .hot-ad-details {
-    width: 100%; 
+    width: 100%;
   }
 
   .hot-image-1 {
@@ -296,7 +308,7 @@ footer {
   }
 
   .main-products {
-   margin-left: 150px;
+    margin-left: 150px;
   }
 
   .wrapper {
@@ -339,7 +351,6 @@ footer {
   .hot-image-3 {
     height: 100px;
   }
-  
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
