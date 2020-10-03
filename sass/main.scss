@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   max-width: 100%;
-  font-family: myHelvetica;
+  font-family: helvet, helvetica, arial, sans-serif;
 }
 
 /* ---Global Rules--- */
@@ -16,13 +16,13 @@ body {
 }
 
 @font-face {
-  font-family: myHelvetica;
-  src: url(fonts/HelveticaNeue-Light.ttf);
+  font-family: helvet;
+  src: url(../fonts/HelveticaNeue-Light.ttf);
 }
 
 @font-face {
-  font-family: myHelvetica;
-  src: url(fonts/HelveticaNeu-Bold.ttf);
+  font-family: helvet;
+  src: url(../fonts/HelveticaNeu-Bold.ttf);
   font-weight: bold;
 }
 
@@ -57,7 +57,7 @@ $margin-left: 70px;
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15 ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 @mixin button {
@@ -108,10 +108,8 @@ header {
   }
 }
 
-.nav-item {
-  &:hover {
-    color: lighten($secondary-color, 20%);
-  }
+.nav-link:hover {
+  color: lighten($secondary-color, 20%);
 }
 
 .fa-bars {
