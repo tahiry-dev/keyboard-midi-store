@@ -94,7 +94,7 @@ main {
   line-height: 1.5;
   border-radius: .25rem;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15sease-in-out,box-shadow .15s ease-in-out;
-  width: 80px;
+  width: 100px;
   font-size: 1.3rem; }
 
 .page:hover {
@@ -107,10 +107,15 @@ main {
 
 /* ---Footer--- */
 footer {
-  margin-top: 100px; }
+  background-color: #383838;
+  padding: 20px; }
 
 .lang-image {
-  width: 50px; }
+  width: 50px;
+  margin-left: 9px; }
+
+.french {
+  margin-left: 15px; }
 
 .about {
   width: 80%;

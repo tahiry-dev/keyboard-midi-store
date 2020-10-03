@@ -130,7 +130,6 @@
     background-color: lighten($secondary-color, 45%);
   }
   
-   
   .search-button {
     @include button;
     width: 150px;
@@ -152,7 +151,7 @@
     display: inline-block;
     background-color: $primary-color;
     @include common-border;
-    width: 80px;
+    width: 100px;
     font-size: 1.3rem;
   }
 
@@ -169,11 +168,17 @@
   /* ---Footer--- */
   
   footer {
-    margin-top: 100px;
+    background-color: $tertiary-color;
+    padding: 20px;
   }
   
   .lang-image {
     width: 50px;
+    margin-left: 9px;
+  }
+  
+  .french {
+    margin-left: 15px;
   }
   
   .about {
