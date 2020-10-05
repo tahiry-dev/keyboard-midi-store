@@ -26,4 +26,4 @@ To quickly see this project in action, visit the [live demo link](https://raw.gi
 
 ## Acknowledgments
 
-- The project follow the design Idea of Mr Mohammed Awad on Zattix.com
+- The project follow the design Idea of Mr Mohammed Awad from https://www.behance.net/gallery/24796463/ZATTIX
