@@ -67,7 +67,7 @@ $margin-left: 70px;
   flex-wrap: wrap;
 }
 
-/* ---main section---*/
+/* ---main section--- */
 
 main {
   background-color: lighten($secondary-color, 45%);
@@ -84,7 +84,6 @@ main {
   color: darken($secondary-color, 15%);
   background-color: darken($tertiary-color, 15%);
 }
-
 
 .product-info {
   display: grid;
@@ -116,7 +115,6 @@ main {
   width: 250px;
   height: 150px;
 }
-
 
 /* ------------------------------------MEDIA QUERIES----------------------------------- */
 @media screen and (max-width: 767px) {
