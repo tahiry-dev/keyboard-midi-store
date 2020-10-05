@@ -174,8 +174,8 @@ main {
 }
 
 .card {
-  height: 400px;
-  line-height: 0.7;
+  height: 450px;
+  line-height: 1;
 
   .card-img-top {
     height: 200px;
@@ -195,6 +195,14 @@ main {
 
 .fa-angle-right {
   margin-top: 7.45px;
+}
+
+.status {
+  margin-top: 12px;
+}
+
+.location {
+  height: 40px;
 }
 
 /* ---Video Demos--- */
@@ -291,9 +299,12 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+
   .carousel-container {
     margin-bottom: 200px;
+    width:100%;
   }
+
 
   .hot-ad-details {
     width: 100%;
@@ -355,12 +366,3 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .wrapper {
-    width: 110%;
-  }
-
-  .status {
-    margin-top: 15px;
-  }
-}

@@ -1,25 +1,3 @@
-/* ---CSS RESET--- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  max-width: 100%;
-  font-family: helvet, helvetica, arial, sans-serif; }
-
-/* ---Global Rules--- */
-body {
-  min-width: 596px;
-  object-fit: cover; }
-
-@font-face {
-  font-family: helvet;
-  src: url(../fonts/HelveticaNeue-Light.ttf); }
-
-@font-face {
-  font-family: helvet;
-  src: url(../fonts/HelveticaNeu-Bold.ttf);
-  font-weight: bold; }
-
 .light {
   color: #888; }
 
@@ -35,24 +13,7 @@ body {
 .back-muted {
   background-color: #383838; }
 
-/* ---Header--- */
-header {
-  background-color: #383838;
-  width: 100%; }
-
-.nav-item .nav-link {
-  color: #888; }
-
-.nav-link:hover {
-  color: #bbbbbb; }
-
-.fa-bars {
-  color: #888; }
-
-.right-icon .fa-music {
-  color: #888; }
-
-/* ---Main Section--- */
+/* ---main section---*/
 main {
   background-color: #fbfbfb; }
 
@@ -106,62 +67,13 @@ main {
   width: 100%;
   margin-left: 40%; }
 
-/* ---Footer--- */
-footer {
-  background-color: #383838;
-  margin-top: 100px;
-  padding: 20px; }
+.images {
+  width: 250px;
+  height: 150px; }
 
-.lang-image {
-  width: 50px;
-  margin-left: 7.5px; }
-
-.french {
-  margin-left: 15px; }
-
-.english {
-  margin-left: 13px; }
-
-.about {
-  width: 80%;
-  margin-left: 70px; }
-
-.acknowledgement {
-  display: flex;
-  justify-content: space-between; }
-
-.copyright {
-  margin-left: 70px; }
-
-.social-shares {
-  margin-right: 70px; }
-
-.footer-separator {
-  width: 90%;
-  margin: 0 auto; }
-
-.language-link,
-.social-link {
-  color: #888; }
-
-.language-link:hover,
-.social-link:hover {
-  color: #bbbbbb;
-  text-decoration: none; }
-
-/* -------------------------------MEDIA QUERIES----------------------------------- */
+/* ------------------------------------MEDIA QUERIES----------------------------------- */
 @media screen and (max-width: 767px) {
-  footer {
-    margin-top: 20px; }
-  .about {
-    margin-left: 80px; }
-  .acknowledgement {
-    display: flex;
-    flex-wrap: wrap; }
-  .footer-nav,
-  .language-version {
-    text-align: center; }
-  .social-shares {
-    width: 100%;
-    text-align: center;
-    margin-left: 50px; } }
+  .search-button {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 30px; } }
