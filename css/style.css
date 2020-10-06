@@ -8,8 +8,11 @@
 
 /* ---Global Rules--- */
 body {
-  min-width: 596px;
-  object-fit: cover; }
+  min-width: 360px; }
+
+img {
+  width: 100%;
+  object-fit: contain; }
 
 @font-face {
   font-family: helvet;
@@ -56,6 +59,9 @@ header {
 main {
   background-color: #fbfbfb; }
 
+.piano-icon {
+  width: 100px; }
+
 .search-button {
   display: block;
   width: 100%;
@@ -80,15 +86,22 @@ main {
   background-color: #121212; }
 
 /* ---Main-Hot-ad-section--- */
+.main-hot-ad {
+  padding-top: 20px; }
+
 .carousel-container {
   width: 65%;
   height: 250px;
   margin: 0 auto; }
 
+.carousel-control-next,
+.carousel-control-prev {
+  top: -280px; }
+
 .hot-ad-details {
   display: inline-block;
   font-weight: 400;
-  color: #383838;
+  color: #fff;
   text-align: center;
   background-color: #d35266;
   border: 1px solid transparent;
@@ -204,21 +217,10 @@ footer {
     height: 250px; } }
 
 @media screen and (max-width: 767px) {
-  .carousel-container {
-    margin-bottom: 200px;
-    width: 100%; }
   .hot-ad-details {
     width: 100%; }
-  .hot-image-1 {
-    width: 350px;
-    height: 300px; }
-  .hot-image-2 {
-    width: 200px;
-    height: 200px; }
-  .main-products {
-    margin-left: 150px; }
-  .wrapper {
-    max-width: 70%; }
+  .card-img-top {
+    height: 700px; }
   .korg-micro-piano,
   .nord-stage,
   .Korg-SV2 {
@@ -227,7 +229,9 @@ footer {
   footer {
     margin-top: 20px; }
   .about {
-    margin-left: 80px; }
+    margin-left: 35px; }
+  .main-video-demos {
+    margin-left: 2%; }
   .acknowledgement {
     display: flex;
     flex-wrap: wrap; }
@@ -240,5 +244,15 @@ footer {
     margin-left: 50px; } }
 
 @media screen and (max-width: 991px) {
-  .hot-image-3 {
-    height: 100px; } }
+  .flex-container {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%; }
+  .carousel-container {
+    margin-bottom: 200px;
+    width: 100%; } }
+
+@media screen and (min-width: 360px) {
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: -600px; } }
