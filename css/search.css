@@ -34,9 +34,7 @@ main {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  transition: all 0.15s ease-in-out;
-  width: 150px;
-  margin-top: 35px; }
+  transition: all 0.15s ease-in-out; }
 
 .search-button:hover {
   color: #626262;
@@ -76,4 +74,11 @@ main {
   .search-button {
     margin: 0 auto;
     margin-bottom: 50px;
-    margin-top: 30px; } }
+    margin-top: 30px; }
+  .product-info {
+    display: block; } }
+
+@media screen and (max-width: 991px) {
+  .images {
+    width: 180px;
+    height: 150px; } }

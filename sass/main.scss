@@ -30,6 +30,16 @@ img {
   font-weight: bold;
 }
 
+@font-face {
+  font-family: goth;
+  src: url(../fonts/HomepageBaukasten-Bold.ttf);
+}
+
+@font-face {
+  font-family: goth;
+  src: url(../fonts/HeroLight.otf);
+}
+
 $primary-color: #d35266;
 $secondary-color: #888;
 $tertiary-color: #383838;
@@ -132,6 +142,13 @@ main {
   background-color: lighten($secondary-color, 45%);
 }
 
+.main-heading {
+  h1,
+  h2 {
+    font-family: goth, helvetica, arial, sans-serif;
+  }
+}
+
 .piano-icon {
   width: 100px;
 }
@@ -159,7 +176,7 @@ main {
 }
 
 .carousel-control-next,
-.carousel-control-prev  {
+.carousel-control-prev {
   top: -280px;
 }
 
@@ -315,14 +332,23 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-
   .hot-ad-details {
     width: 100%;
   }
 
-
   .card-img-top {
-    height: 700px;    
+    height: 700px;
+  }
+
+  .flex-container {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 80px;
+  }
+
+  .ad-description,
+  .hot-image {
+    margin-left: 55px;
   }
 
   .korg-micro-piano,
@@ -361,26 +387,30 @@ footer {
   }
 }
 
-
 @media screen and (max-width: 991px) {
-  .flex-container {
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 100%;
-  }
-
   .carousel-container {
     margin-bottom: 200px;
     width: 100%;
   }
-
-
 }
 
 @media screen and (min-width: 360px) {
   .carousel-control-next,
-  .carousel-control-prev  {
+  .carousel-control-prev {
     top: -600px;
   }
+}
 
+@media screen and (min-width: 410px) and (max-width: 544px) {
+  .flex-container {
+    margin-left: 10%;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 53px) and (max-width: 410px) {
+  .flex-container {
+    margin-left: 0;
+    width: 90%;
+  }
 }
