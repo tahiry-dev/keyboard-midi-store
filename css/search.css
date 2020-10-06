@@ -82,3 +82,8 @@ main {
   .images {
     width: 180px;
     height: 150px; } }
+
+@media screen and (max-width: 575px) {
+  .page-number {
+    width: 100%;
+    margin-left: 10%; } }
