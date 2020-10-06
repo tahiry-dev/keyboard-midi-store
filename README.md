@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-To quickly see this project in action, visit the [live demo link](https://raw.githack.com/tahiry-dev/keyboard-midi-store/feature-kms/index.html).
+To quickly see this project in action, visit the [live demo link](https://raw.githack.com/tahiry-dev/keyboard-midi-store/master/index.html).
 
 ## Authors
 
